@@ -7,16 +7,17 @@ function Show({index}) {
     return (
         <div>
             {/* <h1>Show View</h1> */}
-            <p>{index} Bottles Of Beer On The Wall</p>
-            <p>{index} Bottles Of Beer</p>
+            <p>{index} Monkeys Jumping On The Bed</p>
             {index > 0 && (
-                <a href={`/${index - 1}`}>Take One Down. Pass It Around</a>
-            )}
+                <a href={`/${index - 1}`}>One Fell Down and Broke His Crown</a>
+                )}
+                <p>{100 - index} Dead Monkey Layin' On The Ground </p>
             {index == 0 && (
                 <a href='/99'>Start Over</a>
             )}
         </div>
     )
 }
+
 
 export default Show;
